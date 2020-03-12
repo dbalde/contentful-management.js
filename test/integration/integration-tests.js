@@ -229,7 +229,7 @@ test('Create space for tests which create, change and delete data', (t) => {
         uiExtensionTests(t, space),
         environmentTests(t, space, waitForEnvironmentToBeReady),
         environmentAliasTests(t, space)
-      ]);
+      ])
     })
 })
 
