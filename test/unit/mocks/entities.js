@@ -171,6 +171,12 @@ const webhookMock = {
   })
 }
 
+const spaceMembersMock = {
+  sys: Object.assign(cloneDeep(sysMock), {
+    type: 'SpaceMembers'
+  })
+}
+
 const spaceMembershipMock = {
   sys: Object.assign(cloneDeep(sysMock), {
     type: 'SpaceMembership'
@@ -243,6 +249,7 @@ const mocks = {
   locale: localeMock,
   webhook: webhookMock,
   spaceMembership: spaceMembershipMock,
+  spaceMember: spaceMembersMock,
   role: roleMock,
   apiKey: apiKeyMock,
   previewApiKey: previewApiKeyMock,
