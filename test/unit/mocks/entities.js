@@ -374,6 +374,7 @@ export {
   assetWithFilesMock,
   localeMock,
   webhookMock,
+  spaceMemberMock,
   spaceMembershipMock,
   roleMock,
   apiKeyMock,
