@@ -11,7 +11,7 @@ import {
   entryMock,
   localeMock,
   webhookMock,
-  spaceMembersMock,
+  spaceMemberMock,
   spaceMembershipMock,
   roleMock,
   apiKeyMock,
@@ -531,8 +531,8 @@ test('API call getSpaceMembership fails', (t) => {
 
 test('API call getSpaceMembers', (t) => {
   makeGetCollectionTest(t, setup, teardown, {
-    entityType: 'spaceMembers',
-    mockToReturn: spaceMembersMock,
+    entityType: 'spaceMember',
+    mockToReturn: spaceMemberMock,
     methodToTest: 'getSpaceMembers'
   })
 })

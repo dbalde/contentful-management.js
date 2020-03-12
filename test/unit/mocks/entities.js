@@ -173,7 +173,7 @@ const webhookMock = {
 
 const spaceMemberMock = {
   sys: Object.assign(cloneDeep(sysMock), {
-    type: 'SpaceMembers'
+    type: 'SpaceMember'
   })
 }
 
