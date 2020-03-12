@@ -171,7 +171,7 @@ const webhookMock = {
   })
 }
 
-const spaceMembersMock = {
+const spaceMemberMock = {
   sys: Object.assign(cloneDeep(sysMock), {
     type: 'SpaceMembers'
   })
@@ -249,7 +249,7 @@ const mocks = {
   locale: localeMock,
   webhook: webhookMock,
   spaceMembership: spaceMembershipMock,
-  spaceMember: spaceMembersMock,
+  spaceMember: spaceMemberMock,
   role: roleMock,
   apiKey: apiKeyMock,
   previewApiKey: previewApiKeyMock,
@@ -305,6 +305,10 @@ function setupEntitiesMock (rewiredModuleApi) {
     webhook: {
       wrapWebhook: sinon.stub(),
       wrapWebhookCollection: sinon.stub()
+    },
+    spaceMember: {
+      wrapSpaceMember: sinon.stub(),
+      wrapSpaceMemberCollection: sinon.stub()
     },
     spaceMembership: {
       wrapSpaceMembership: sinon.stub(),
